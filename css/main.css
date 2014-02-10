@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
+body {
+  background-color: #ebe8e4;
+  font-family: 'Arimo', sans-serif;
+  font-size: 18px;
+  margin: 5px 22px;
+}
+
+a, a:hover, a:visited {
+  color: #34346b;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  margin: 8px 0;
+  padding: 0 15px 24px 15px;
+  overflow: hidden;
+}
+
+/*
+ * main stuff
+ */
+
+div.main-container {
+  width: 100%;
+}
+
+div.main-content {
+  margin-right: 280px;
+}
+
+div.main-content a, div.main-content a:hover, div.main-content a:visited {
+}
+
+/*
+ * nav stuff
+ */
+
+nav {
+  background-color: #34346b;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  margin: 8px 0;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+nav#navigation a {
+  color: #fff;
+  line-height: 56px;
+  text-decoration: none;
+}
+
+nav div.navbar-header {
+  font-size: 26px;
+  width: 280px;
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 24px;
+}
+
+nav li:hover {
+  background-color: #dedede;
+}
+
+/*
+ * sidebar stuff
+ */
+
+div.sidebar {
+  float: right;
+  width: 240px;
+  margin: 0;
+}
+
+/*
+ * post stuff
+ */
+
+div.post {
+  ppadding: 0 15px 24px 15px;
+}
+
+/*
+ * footer stuff
+ */
+
+div.footer {
+  clear: both;
+  text-align: center;
+  line-height: 56px;
+}

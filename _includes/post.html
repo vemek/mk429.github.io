@@ -1,0 +1,15 @@
+{% unless post %} {% assign post = page %} {% endunless %}
+<div class="post card">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a><hr/></h3>
+  <span class="lead">
+    {% if page.url == '/' %}
+      {{ post.content }}
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </span>
+  <div class="post-meta muted">
+    Posted {% if post.category %} in {{ post.category }} {% endif %} on {{ post.date | date_to_string }}
+    {% if post.tags.size > 0 %} | {{ post.tags }} {% endif %}
+  </div>
+</div>

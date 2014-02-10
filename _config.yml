@@ -1,0 +1,13 @@
+title: vemek.github.io
+source:       .
+destination:  ./_site
+safe:         false
+exclude:      [Gemfile, Gemfile.lock]
+baseurl:      /
+timezone:     Europe/Dublin
+plugins:     ./_plugins
+future:      true
+lsi:         false
+pygments:    true
+permalink:   pretty
+

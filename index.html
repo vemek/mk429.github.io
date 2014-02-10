@@ -1,0 +1,9 @@
+---
+layout: site
+title: Home
+well: true
+---
+
+{% for post in site.posts %}
+{% include post.html post=post %}
+{% endfor %}
