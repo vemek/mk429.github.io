@@ -2,7 +2,7 @@
 layout: post
 title: Running Debian on a MacBook Air
 category: linux
-tags: macbook, apple, mac, linux, debian
+tags: macbook apple mac linux debian
 ---
 I really like Apple's MacBooks, but I don't feel comfortable unless I can use my preferred, super-customisable, Linux-based OS distribution. Debian Wheezy is running on my laptop like a dream, but I am seeing a strange issue when I connect an Apple Thunderbolt Monitor to it. There's a [DRM driver polling problem](https://patchwork.kernel.org/patch/2400621/)
 

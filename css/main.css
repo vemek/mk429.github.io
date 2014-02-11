@@ -7,16 +7,20 @@ body {
   margin: 5px 22px;
 }
 
-a, a:hover, a:visited {
+h3, a, a:hover, a:visited {
   color: #34346b;
   text-decoration: none;
+}
+
+a:hover {
+  color: #dedede;
 }
 
 .card {
   background-color: #fff;
   border: 1px solid #dedede;
   border-radius: 5px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
   margin: 8px 0;
   padding: 0 15px 24px 15px;
   overflow: hidden;
@@ -34,18 +38,15 @@ div.main-content {
   margin-right: 280px;
 }
 
-div.main-content a, div.main-content a:hover, div.main-content a:visited {
-}
-
 /*
  * nav stuff
  */
 
 nav {
+  line-height: 56px;
   background-color: #34346b;
-  border: 1px solid #dedede;
   border-radius: 5px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
   margin: 8px 0;
   padding: 0 15px;
   overflow: hidden;
@@ -53,8 +54,8 @@ nav {
 
 nav#navigation a {
   color: #fff;
-  line-height: 56px;
   text-decoration: none;
+  font-weight: normal;
 }
 
 nav div.navbar-header {
@@ -88,12 +89,36 @@ div.sidebar {
   margin: 0;
 }
 
+div.sidebar h4 {
+  border: 1px 0 solid black;
+  padding: 0 10px;
+  line-height: 26px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
+}
+
 /*
  * post stuff
  */
 
-div.post {
-  ppadding: 0 15px 24px 15px;
+div.post div.meta {
+  padding: 22px 0 0 0;
+  font-size: 14px;
+}
+
+/*
+ * tag stuff
+ */
+
+div.tags {
+  float: right;
+}
+
+div.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #dedede;
+  border-radius: 25px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
 }
 
 /*
