@@ -122,6 +122,13 @@ div.tag {
 }
 
 /*
+ * gist stuff
+ */
+div.gh-gist {
+  font-size: 12px;
+}
+
+/*
  * footer stuff
  */
 
