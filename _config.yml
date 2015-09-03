@@ -6,8 +6,14 @@ exclude:      [Gemfile, Gemfile.lock]
 baseurl:      /
 timezone:     Europe/Dublin
 plugins:     ./_plugins
-future:      true
+future:      false
 lsi:         false
-pygments:    true
+highlighter: pygments
 permalink:   pretty
 
+# Plugins
+gems:
+  - jekyll-index-generator
+  - jekyll-mentions
+
+jekyll-mentions: https://twitter.com

@@ -1,4 +1,5 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "pry"
+gem 'jekyll'
+gem 'jekyll-mentions'
+gem 'jekyll-index-generator'
