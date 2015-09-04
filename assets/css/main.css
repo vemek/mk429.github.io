@@ -96,6 +96,16 @@ div.sidebar h4 {
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
 }
 
+div.sidebar ul.profile-links li {
+  display: inline;
+  list-style: none;
+}
+
+div.sidebar ul.profile-links li img {
+  width: 50px;
+  height: 50px;
+}
+
 /*
  * post stuff
  */

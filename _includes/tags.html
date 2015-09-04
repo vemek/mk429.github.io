@@ -1,7 +1,5 @@
 <!-- BEGIN tags.html -->
-<ul>
-  {% for tag in site.tags %}
-    <li>{{ tag[0] }} <span class="badge">{{ tag[1].size }}</span></li>
-  {% endfor %}
-</ul>
+{% for tag in site.tags %}
+  <div class="tag"><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></div>
+{% endfor %}
 <!-- END tags.html -->
