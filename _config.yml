@@ -1,19 +1,22 @@
-title: vemek.github.io
-source:       .
-destination:  ./_site
-safe:         false
-exclude:      [Gemfile, Gemfile.lock]
-baseurl:      /
-timezone:     Europe/Dublin
-plugins:     ./_plugins
-future:      false
-lsi:         false
-highlighter: pygments
-permalink:   pretty
-
-# Plugins
+title: vemek.co
+source: .
+destination: ./_site
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
 gems:
-  - jekyll-index-generator
-  - jekyll-mentions
-
-jekyll-mentions: https://twitter.com
+  - jekyll-coffeescript
+  - jekyll-paginate
+safe: false
+exclude: [Gemfile, Gemfile.lock]
+baseurl: /
+timezone: Europe/Dublin
+future: false
+lsi: false
+permalink: pretty
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+plugin_dir: _plugins

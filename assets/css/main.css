@@ -35,7 +35,6 @@ div.main-container {
 }
 
 div.main-content {
-  margin-right: 280px;
 }
 
 /*
@@ -75,36 +74,6 @@ nav li {
   padding: 0 24px;
 }
 
-nav li:hover {
-  background-color: #dedede;
-}
-
-/*
- * sidebar stuff
- */
-
-div.sidebar {
-  float: right;
-  width: 240px;
-  margin: 0;
-}
-
-div.sidebar h4 {
-  border: 1px 0 solid black;
-  padding: 0 10px;
-  line-height: 26px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.55);
-}
-
-div.sidebar ul.profile-links li {
-  display: inline;
-  list-style: none;
-}
-
-div.sidebar ul.profile-links li img {
-  width: 50px;
-  height: 50px;
-}
 
 /*
  * post stuff
