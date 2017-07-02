@@ -3,4 +3,4 @@
 *.swp
 /.bundle/
 /_site/
-/bootstrap/less/
+.jekyll-metadata
