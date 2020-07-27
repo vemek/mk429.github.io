@@ -1,6 +1,5 @@
-*~
-.DS_Store
-*.swp
-/.bundle/
-/_site/
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor

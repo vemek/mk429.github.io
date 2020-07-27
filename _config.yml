@@ -1,22 +1,12 @@
 title: vemek.co
-source: .
-destination: ./_site
-github: [metadata]
-kramdown:
-  input: GFM
-  hard_wrap: false
-gems:
-  - jekyll-coffeescript
-  - jekyll-paginate
-safe: false
-exclude: [Gemfile, Gemfile.lock]
-baseurl: /
-timezone: Europe/Dublin
-future: false
-lsi: false
-permalink: pretty
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-plugin_dir: _plugins
+email: blog@vemek.co
+description: >-
+  A blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://vemek.co" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: vemek
+github_username:  vemek
+
+# Build settings
+theme: minima
+
