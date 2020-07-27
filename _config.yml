@@ -10,3 +10,5 @@ github_username:  vemek
 # Build settings
 theme: minima
 
+plugins:
+  - jekyll-postcss
