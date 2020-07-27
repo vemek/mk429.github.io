@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>OpenVPN Quickstart Guide</title>
+  <meta name="description" content="a blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300">
+  <div class="max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto">
+    <div class="pt-3 px-3 align-baseline">
+      <div class="inline text-xl">
+        <a href="/"><span class="text-indigo-700">vemek</span><span>.co</span></a>
+      </div>
+      <div class="inline text-lg">
+        <a class="text-gray-600" href="/archive">archives</a>
+      </div>
+      <div class="inline text-lg">
+        <a class="text-gray-600" href="/about">about</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg">
+      <div class="pt-3 pb-5 m-4 leading-relaxed">
+        <h2 class="text-2xl">OpenVPN Quickstart Guide</h2>
+        <div class="pt-4 text-lg">
+          <p>VPNs are useful. Commercial VPNs don’t quite live up to their promises. They claim that without a VPN, your ISP has access to what you do online. I feel this is misleading. Increasingly, sites are moving to HTTPS - certainly when a user is submitting data. Even so, there is some truth to this; DNS requests by default will either go to your ISPs nameserver or be visible to them in plaintext. This is usually not the case with VPN providers. They will send DNS through their tunnel and likely serve the request from their own nameserver. This certainly hides the request from your ISP, but it doesn’t solve the fundamental problem - it just changes which company you have to trust.</p>
+
+<p>Here’s how to quickly set up a VPN of your own.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#!/bin/bash</span>
+
+<span class="nb">set</span> <span class="nt">-e</span>
+
+<span class="nv">CLIENT</span><span class="o">=</span><span class="nv">$@</span>
+<span class="nv">config</span><span class="o">=</span><span class="s2">"</span><span class="nv">$CLIENT</span><span class="s2">.conf"</span>
+
+<span class="nb">echo</span> <span class="s2">"&gt;&gt; Creating openvpn client config for </span><span class="nv">$CLIENT</span><span class="s2">"</span>
+<span class="nb">cp</span> <span class="nt">-H</span> template.conf <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">chmod </span>700 <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;ca&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">cat</span> <span class="s2">"easy-rsa/keys/ca.crt"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;/ca&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;cert&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">cat</span> <span class="s2">"easy-rsa/keys/</span><span class="nv">$CLIENT</span><span class="s2">.crt"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;/cert&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;key&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">cat</span> <span class="s2">"easy-rsa/keys/</span><span class="nv">$CLIENT</span><span class="s2">.key"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&lt;/key&gt;"</span> <span class="o">&gt;&gt;</span> <span class="s2">"</span><span class="nv">$config</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"&gt;&gt; Created config </span><span class="nv">$config</span><span class="s2">"</span></code></pre></figure>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
